@@ -178,7 +178,7 @@ def calculate(exp):
             result += ch # to accomodate number > 1 digit
         
         if ch == '(':
-            result = calculate(exp) # prioriteze to calculate inside parenthesis
+            result = calculate(exp) # prioritize to calculate inside parenthesis
 
         if len(exp) == 0 or ch in operator or ch == ')':
             if sign == '+':
